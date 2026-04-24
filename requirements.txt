@@ -1,0 +1,19 @@
+# DOOR-RL 核心依赖
+torch>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# nuScenes数据集
+nuscenes-devkit>=1.1.11
+pyquaternion>=0.9.9
+Shapely>=2.0.0
+
+# 工具和可视化
+tqdm>=4.65.0
+tensorboard>=2.14.0
+pyyaml>=6.0
+
+# 开发工具
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0

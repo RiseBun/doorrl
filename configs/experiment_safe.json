@@ -1,0 +1,35 @@
+{
+  "seed": 42,
+  "model": {
+    "raw_dim": 40,
+    "model_dim": 128,
+    "hidden_dim": 256,
+    "action_dim": 2,
+    "max_tokens": 97,
+    "num_token_types": 8,
+    "top_k": 16,
+    "num_heads": 4,
+    "num_layers": 2,
+    "dropout": 0.1
+  },
+  "training": {
+    "batch_size": 8,
+    "epochs": 20,
+    "learning_rate": 0.0001,
+    "weight_decay": 1e-05,
+    "obs_weight": 1.0,
+    "reward_weight": 0.1,
+    "continue_weight": 0.1,
+    "collision_weight": 0.1,
+    "bc_weight": 0.01,
+    "log_every": 1
+  },
+  "data": {
+    "train_size": 64,
+    "val_size": 16,
+    "max_dynamic_objects": 12,
+    "max_map_tokens": 32,
+    "max_relation_tokens": 12,
+    "noise_std": 0.0
+  }
+}

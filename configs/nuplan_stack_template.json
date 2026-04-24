@@ -1,0 +1,44 @@
+{
+  "seed": 7,
+  "benchmark": {
+    "offline_dataset": "nuscenes",
+    "closed_loop_benchmark": "nuplan",
+    "external_evaluation": "navsim",
+    "nuplan_mode": "closed_loop_reactive",
+    "nuscenes_root": "/path/to/nuscenes",
+    "nuplan_root": "/path/to/nuplan",
+    "navsim_root": "/path/to/navsim"
+  },
+  "model": {
+    "raw_dim": 40,
+    "model_dim": 128,
+    "hidden_dim": 256,
+    "action_dim": 2,
+    "max_tokens": 97,
+    "num_token_types": 8,
+    "top_k": 16,
+    "num_heads": 4,
+    "num_layers": 2,
+    "dropout": 0.1
+  },
+  "training": {
+    "batch_size": 8,
+    "epochs": 20,
+    "learning_rate": 0.0003,
+    "weight_decay": 1e-05,
+    "obs_weight": 1.0,
+    "reward_weight": 0.5,
+    "continue_weight": 0.25,
+    "collision_weight": 0.25,
+    "bc_weight": 0.1,
+    "log_every": 10
+  },
+  "data": {
+    "train_size": 64,
+    "val_size": 16,
+    "max_dynamic_objects": 16,
+    "max_map_tokens": 48,
+    "max_relation_tokens": 16,
+    "noise_std": 0.0
+  }
+}
